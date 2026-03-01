@@ -27,7 +27,7 @@
             "matches": [
                 "https://tkglobal.melon.com/reservation/popup/onestop.htm*"
             ],
-            "js": ["content/storage.js", "content/sleep.js", "content/seat.js"],
+            "js": ["content/storage.js", "content/sleep.js", "content/email.js", "content/seat.js"],
             "run_at": "document_end"
         },
         {

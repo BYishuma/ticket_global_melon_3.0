@@ -302,6 +302,23 @@ async function proceedToNextStep() {
 	    playBeep(440, 1000);
 		
 		await showBrowserNotification("选座成功", "已选中座位");
+		
+		// 发送邮件提醒
+		try {
+		    if (typeof sendEmailNotificationWithForm === 'function') {
+		        const concertId = getConcertId();
+		        const data = await get_stored_value(concertId);
+		        const concertInfo = {
+		            concertName: data?.concertName || '演唱会',
+		            date: data?.date || '',
+		            time: data?.time || '',
+		            section: data?.section?.[0] || ''
+		        };
+		        await sendEmailNotificationWithForm(concertInfo);
+		    }
+		} catch (emailError) {
+		    console.error('发送邮件提醒时出错:', emailError);
+		}
 				
 	    return true;
 	 } catch (error) {

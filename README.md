@@ -42,22 +42,18 @@ cd ticket_global_melon_3.0_ManifestV3
 7. 点击"部署"并完成授权
 8. 复制生成的 **Web 应用 URL**
 
-#### 步骤 2：在插件中配置
+#### 步骤 2：在代码中配置邮箱
 
-1. 打开票务网站页面
-2. 按 F12 打开开发者工具
-3. 在控制台（Console）中输入以下代码并回车：
+打开 `content/email.js` 文件，修改以下配置：
 
 ```javascript
-chrome.storage.sync.set({
-  emailConfig: {
+const DEFAULT_EMAIL_CONFIG = {
     scriptUrl: 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE',  // 替换为您的 Web 应用 URL
-    recipientEmail: 'your-email@gmail.com'  // 替换为您的邮箱
-  }
-}, function() {
-  console.log('✅ 邮件配置已保存！');
-});
+    recipientEmail: 'your-email@gmail.com'  // 替换为您的邮箱地址
+};
 ```
+
+保存文件后，重新加载插件即可生效。
 
 ## 使用方法
 
