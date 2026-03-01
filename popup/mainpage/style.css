@@ -1,0 +1,134 @@
+body {
+    overflow:hidden;
+    background-color: #f4f4f4; 
+    border-radius: 8px;
+	color: #585857;
+	width: 450px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.button-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.button-concert {
+    background-color: #fff; 
+    color: #333; 
+    border: 1px solid #ddd; 
+    border-radius: 8px;
+    padding: 15px;
+    width: 100px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.2s ease-in-out;
+	margin-top: 10px;
+}
+
+.button-concert:hover {
+    transform: scale(1.05);
+}
+
+.button-concert img {
+    width: 75%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+
+.list-booking-container::-webkit-scrollbar-track {
+    background-color: #f4f4f4; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+	padding: 20px 0; 
+    overflow-y: auto; 
+    max-height: 300px; 
+}
+
+
+.booking-item {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 8px 12px; 
+    width: 360px;
+    margin: 0 auto 8px; 
+    font-size: 14px; 
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08); 
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 1.3; 
+}
+
+.booking-item > *:not(:last-child) {
+    margin-right: 8px; 
+}
+
+.booking-item:hover {
+    transform: scale(1.05);
+}
+
+.concert-info {
+    flex-grow: 1;
+    padding: 0 4px; 
+}
+
+
+.concert-name {
+    font-weight: bold;
+	font-size: 16px
+}
+
+.delete-button {
+    background: #ffebee;  
+    border: 1px solid #f44336; 
+    border-radius: 8px;   
+    color: #f44336;      
+    font-size: 18px;
+    font-weight: bold;    
+    padding: 5px 10px;   
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.delete-button:hover {
+    background: #f44336;  
+    color: white;        
+}
+
+.list-booking-container::-webkit-scrollbar {
+    width: 9px; 
+}
+
+.list-booking-container::-webkit-scrollbar-track {
+    background-color: #ebe0f9; 
+}
+
+.list-booking-container::-webkit-scrollbar-thumb {
+    background-color: #2f056b; 
+    border-radius: 5px; 
+}
+
+.list-booking-container::-webkit-scrollbar-thumb:hover {
+    background-color: #5438dc; 
+}
