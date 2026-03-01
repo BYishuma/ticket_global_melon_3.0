@@ -1,4 +1,4 @@
-# Melon Ticket 自动抢票插件
+# Melon Ticket 自动抢票插件 
 
 一个用于 Melon Global Ticket 网站的自动抢票浏览器扩展插件，支持自动选座、邮件提醒和弹窗自动处理功能。
 
@@ -198,12 +198,6 @@ ticket_global_melon_3.0_ManifestV3/
 - ✅ 优化选座算法
 - ✅ 改进用户体验
 
-## 联系方式
-
-如有问题或建议，请通过以下方式联系：
-
-- 提交 GitHub Issue
-- 发送邮件到：your-email@gmail.com
 
 ---
 
