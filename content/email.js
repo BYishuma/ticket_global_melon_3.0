@@ -3,8 +3,8 @@
 
 // 默认邮箱配置（直接在代码中修改）
 const DEFAULT_EMAIL_CONFIG = {
-    scriptUrl: 'https://script.google.com/macros/s/AKfycbwFFTV2FyHMJ0RSZAQA91tvKuz0ATGSqKXRiuwtmLIxgk8zPm8Xvo82ppcc3faHX2inZQ/exec',
-    recipientEmail: 'mayishu896231044@gmail.com'
+    scriptUrl: 'YOUR_SCRIPT_URL',
+    recipientEmail: '1234@gmail.com'
 };
 
 // 使用 fetch 的替代方法（因为 no-cors 模式无法读取响应）
